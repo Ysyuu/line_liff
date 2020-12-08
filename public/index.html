@@ -2,15 +2,58 @@
 <html lang="ja">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIFF DEMO Lucky Color</title>
+    <title>届出作成</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>ラッキーカラーはなんでしょう？</h1>
-    <button id="sendmessagebutton">ラッキーカラーをチェック</button>
+    <div class="container_type">
+        <h1>区別</h1>
+        <select name=”type”>
+            <option value=”1”>有給休暇</option>
+            <option value=”2”>代休暇</option>
+            <option value=”3”>振休</option>
+            <option value=”4”>時年休</option>
+            <option value=”5”>欠勤</option>
+            <option value=”6”>遅刻</option>
+            <option value=”7”>早退</option>
+            <option value=”8”>休日出勤</option>
+            <option value=”9”>出張</option>
+            <option value=”10”>住所変更</option>
+            <option value=”11”>特別休暇</option>
+            <option value=”12”>その他</option>
+        </select>
+    </div>
+    <div class="container_date">
+        <h1>期間・日時</h1>
+        <div class="date_input">
+            <p>開始日時</p>
+            <input type="datetime-local" name="date_start">
+        </div>
+        <div class="date_input">
+            <p>終了日時</p>
+            <input type="datetime-local" name="date_end">
+        </div>
+    </div>
+    <div class="container_reason">
+        <h1>事由</h1>
+        <textarea name="reason" cols="50" rows="4"></textarea>
+    </div>
+    <div class="container_contact">
+        <h1>連絡先</h1>
+        <input type="text" name="contact" size="30" maxlength="13">
+    </div>
+    <div class="container_document">
+        <h1>添付書類</h1>
+        <input type="text" name="document" size="30" maxlength="20">
+    </div>
+    <div class="container_remarks">
+        <h1>備考</h1>
+        <textarea name="remarks" cols="50" rows="4"></textarea>
+    </div>
+    <button id="sendmessagebutton">申請する</button>
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script src="liff-starter.js"></script>
 </body>

@@ -10,7 +10,16 @@ table {
 
 div {
     max-width: 100%;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.container_date{
+    overflow: hidden;
+}
+
+.date_input{
+    float: left;
+    margin : 3px;
 }
 
 th {
