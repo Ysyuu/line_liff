@@ -11,30 +11,38 @@
 <body>
     <div class="container_type">
         <h1>区別</h1>
-        <select name=”type”>
-            <option value=”1”>有給休暇</option>
-            <option value=”2”>代休暇</option>
-            <option value=”3”>振休</option>
-            <option value=”4”>時年休</option>
-            <option value=”5”>欠勤</option>
-            <option value=”6”>遅刻</option>
-            <option value=”7”>早退</option>
-            <option value=”8”>休日出勤</option>
-            <option value=”9”>出張</option>
-            <option value=”10”>住所変更</option>
-            <option value=”11”>特別休暇</option>
-            <option value=”12”>その他</option>
+        <select class="type_main">
+            <option value="1">有給休暇</option>
+            <option value="2">代休暇</option>
+            <option value="3">振休</option>
+            <option value="4">時年休</option>
+            <option value="5">欠勤</option>
+            <option value="6">遅刻</option>
+            <option value="7">早退</option>
+            <option value="8">休日出勤</option>
+            <option value="9">出張</option>
+            <option value="10">住所変更</option>
+            <option value="11">特別休暇</option>
+            <option value="12">その他</option>
+        </select>
+        <select id="11" class="type_sub">
+            <option value="1">生理休暇</option>
+            <option value="2">冠婚葬祭</option>
+            <option value="3">出産・育児</option>
+            <option value="4">介護</option>
+            <option value="5">災害</option>
+            <option value="6">交通機関の遅延</option>
         </select>
     </div>
     <div class="container_date">
         <h1>期間・日時</h1>
-        <div class="date_input">
+        <div class="container_date_input">
             <p>開始日時</p>
-            <input type="datetime-local" name="date_start">
+            <input type="date" id="date_input_start" name="date_start">
         </div>
-        <div class="date_input">
+        <div class="container_date_input">
             <p>終了日時</p>
-            <input type="datetime-local" name="date_end">
+            <input type="date" id="date_input_end" name="date_end">
         </div>
     </div>
     <div class="container_reason">
@@ -56,5 +64,49 @@
     <button id="sendmessagebutton">申請する</button>
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script src="liff-starter.js"></script>
+    <script src="selectChange.js"></script>
+    <!-- <script type="text/javascript">
+        let select = document.querySelector('[class="type_main"]');
+        let selectSub = document.querySelector('[class="type_sub"]');
+        let inputDateStart = document.querySelector('[id="date_input_start"]');
+        let inputDateEnd = document.querySelector('[id="date_input_end"]');
+        select.onchange = event => {
+            switch(select.value) {
+                case '4':
+                case '6':
+                case '7':
+                case '8':
+                    selectSub.style.display = 'none';
+                    inputDateStart.type = "datetime-local";
+                    inputDateEnd.type = "datetime-local";
+                    break;
+                case '11':
+                    selectSub.style.display = 'inline';
+                    inputDateStart.type = "date";
+                    inputDateEnd.type = "date";
+                    break;
+                default:
+                    selectSub.style.display = 'none';
+                    inputDateStart.type = "date";
+                    inputDateEnd.type = "date";
+                    break;
+            }
+        }
+        selectSub.onchange = event => {
+            switch(selectSub.value) {
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                    inputDateStart.type = "datetime-local";
+                    inputDateEnd.type = "datetime-local";
+                    break;
+                default:
+                    inputDateStart.type = "date";
+                    inputDateEnd.type = "date";
+                    break;
+            }
+        }
+    </script> -->
 </body>
 </html>
