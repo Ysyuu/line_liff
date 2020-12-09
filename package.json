@@ -1,5 +1,5 @@
 {
-  "name": "line-liff-v2-starter",
+  "name": "lineliff-01",
   "version": "1.0.0",
   "description": "This is a small web application that demonstrates the basic functionality of the [LINE Front-end Framework (LIFF)](https://developers.line.biz/en/docs/liff/overview/).",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/line/line-liff-v2-starter"
+    "url": "https://github.com/Ysyuu/line_liff"
   },
   "license": "MIT",
   "dependencies": {

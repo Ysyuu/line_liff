@@ -25,7 +25,7 @@ LIFFの使用方法に応じて、デプロイ方法を選択してください�
 
 ### 「Deploy to Heroku」ボタンを使ってアプリをデプロイする
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/line/line-liff-v2-starter)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ysyuu/line_liff)
 
 1. 上記の**Deploy to Heroku** ボタンをクリックします。
 2. Herokuの「Create New App」ページで、必要事項を入力します。
