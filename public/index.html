@@ -11,7 +11,7 @@
 <body>
     <div class="container_type">
         <h1>区別</h1>
-        <select class="type_main">
+        <select id="type_main">
             <option value="1">有給休暇</option>
             <option value="2">代休暇</option>
             <option value="3">振休</option>
@@ -25,7 +25,7 @@
             <option value="11">特別休暇</option>
             <option value="12">その他</option>
         </select>
-        <select id="11" class="type_sub">
+        <select id="type_sub">
             <option value="1">生理休暇</option>
             <option value="2">冠婚葬祭</option>
             <option value="3">出産・育児</option>
@@ -38,28 +38,28 @@
         <h1>期間・日時</h1>
         <div class="container_date_input">
             <p>開始</p>
-            <input type="date" id="date_input_start" name="date_start">
+            <input type="date" id="date_start">
         </div>
         <div class="container_date_input">
             <p>終了</p>
-            <input type="date" id="date_input_end" name="date_end">
+            <input type="date" id="date_end">
         </div>
     </div>
     <div class="container_reason">
         <h1>事由</h1>
-        <textarea name="reason" cols="50" rows="4"></textarea>
+        <textarea id="reason" cols="50" rows="4"></textarea>
     </div>
     <div class="container_contact">
         <h1>連絡先</h1>
-        <input type="text" name="contact" size="30" maxlength="13">
+        <input type="text" id="contact" size="30" maxlength="13">
     </div>
     <div class="container_document">
         <h1>添付書類</h1>
-        <input type="text" name="document" size="30" maxlength="20">
+        <input type="text" id="document" size="30" maxlength="20">
     </div>
     <div class="container_remarks">
         <h1>備考</h1>
-        <textarea name="remarks" cols="50" rows="4"></textarea>
+        <textarea id="remarks" cols="50" rows="4"></textarea>
     </div>
     <button id="sendmessagebutton">申請する</button>
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>

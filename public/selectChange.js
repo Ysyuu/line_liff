@@ -5,10 +5,10 @@ window.onload = function (e) {
 };
 
 function initSelect(data) {
-    let select = document.querySelector('[class="type_main"]');
-    let selectSub = document.querySelector('[class="type_sub"]');
-    let inputDateStart = document.querySelector('[id="date_input_start"]');
-    let inputDateEnd = document.querySelector('[id="date_input_end"]');
+    let select = document.querySelector('[id="type_main"]');
+    let selectSub = document.querySelector('[id="type_sub"]');
+    let inputDateStart = document.querySelector('[id="date_start"]');
+    let inputDateEnd = document.querySelector('[id="date_end"]');
     select.onchange = event => {
         switch(select.value) {
             case '4':
