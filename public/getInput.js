@@ -11,11 +11,11 @@ let inputRemarks
 
 window.onload = function (e) {
     liff.init(function (data) {
-        initSelect(data);
+        initGetInput(data);
     });
 };
 
-function initSelect(data) {
+function initGetInput(data) {
     select = document.querySelector('[id="type_main"]');
     selectSub = document.querySelector('[id="type_sub"]');
     inputDateStart = document.querySelector('[id="date_start"]');
