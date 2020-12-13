@@ -1,5 +1,3 @@
-const { json } = require("express")
-
 let select
 let selectSub
 let inputDateStart
